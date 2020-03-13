@@ -1,0 +1,44 @@
+
+
+
+GET http://localhost:3000/api/v1/usuarios
+
+###
+POST http://localhost:3000/api/v1/usuarios
+Content-Type: application/json
+
+{
+    "nombres": "julio",
+    "apellidos": "torres",
+    "email": "email@gmail.com",
+    "telefono": "3013018812"
+}
+
+###
+POST http://localhost:3000/api/v1/pedidos
+Content-Type: application/json
+
+{
+    "usuario_id": 1,
+    "direccion": "calle no me acuerdo",
+    "fecha_entrega": "2020-10-16",
+    "franja_horaria_inicio": "14:50",
+    "franja_horaria_fin": "16:50"
+}
+
+###
+GET http://localhost:3000/api/v1/pedidos?fecha_entrega=2020-10-16&driver_id=1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/api/v1/drivers
+Content-Type: application/json
+
+{
+    "nombres": "julio",
+    "apellidos": "torres",
+    "email": "email@gmail.com",
+    "telefono": "3013018812",
+    "placa": "nada",
+    "identificacion": "123456789"
+}
